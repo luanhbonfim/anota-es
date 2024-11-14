@@ -1,0 +1,30 @@
+h1 {
+    font-family: 'Verdana', sans-serif;
+}
+
+p {
+    color: #0000FF;
+    font-size: 20px;
+    font-family: 'Helvetica', sans-serif;
+
+    /* left - center, right, justify */
+    text-align: justify; 
+
+    /* transformando todos as palavras em caixas altas */
+    text-transform: uppercase;
+
+    /* espaçamento entre as letras */ 
+    letter-spacing: 4px;
+
+    /* espaçamento entre as palavras */
+    word-spacing: 20px;
+    
+    /* altura da linha */
+    line-height: 100px;
+
+    /* 
+    sombreamento do texto
+     left(-) right(+) | top (-) bottom (+) | esfumaçamento | cor
+    */
+    text-shadow: 0 -20px 10px red;
+}
