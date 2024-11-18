@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Verdana';
+}
+
+/*
+    Por padrão o display do label é inline, ou seja, tudo em uma única linha
+    
+    display: block -> irá deixar tudo em "bloco", deixando um em cada linha
+*/
+label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* 
+    Selecionando um input específico, do tipo texto, temos 2 alternativas.
+        1 - Colocar uma class nos input's (html)
+        2 - Utilizar o seletor no css: [type=text].
+
+        exemplo:
+        irá selecionar todo input que for do tipo texto.
+*/
+
+input[type=text] {
+    padding: 10px;
+    width: 500px;
+}

@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Verdana';
+}
+
+/*
+    Por padrão o display do label é inline, ou seja, tudo em uma única linha
+    
+    display: block -> irá deixar tudo em "bloco", deixando um em cada linha
+*/
+label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* 
+    Selecionando um input específico, do tipo texto, temos 2 alternativas.
+        1 - Colocar uma class nos input's (html)
+        2 - Utilizar o seletor no css: [type=text].
+
+        exemplo:
+        irá selecionar todo input que for do tipo texto.
+*/
+
+input[type=text] {
+    padding: 10px;
+    width: 500px;
+}
+
+/* ---------------------- PARTE 2 ------------------------------- */
+/* -------------------------------------------------------------- */
+
+textarea {
+    height: 200px;
+    resize: none; /* Desabilita o botão/opção de resize que permitia o usuário a manipular o campo do textarea */
+}
+
+input[type=text], textarea, select {  /* reaproveitando estilos no textarea e select */
+    width: 500px;
+    font-size: 15px;
+    border: 1px solid #CCC;
+    outline: none; /* Remove a borda azul ou borda de seleção */
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #CCC;
+    background-color: #EEE;
+
+    cursor: pointer;
+}
+
+/* 
+    hover -> mudar estilização quando o mouse passar por cima
+*/
+button:hover { 
+    background-color: #DDD;
+}

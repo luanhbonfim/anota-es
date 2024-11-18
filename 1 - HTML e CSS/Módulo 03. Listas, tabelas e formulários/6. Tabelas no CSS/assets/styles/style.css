@@ -1,0 +1,22 @@
+table {
+    text-align: center;
+    width: 600px;
+}
+
+table thead {
+    background-color: #CCC;
+}
+
+td, th {
+    padding: 10px;
+}
+
+tbody tr:hover {
+    background-color: #CCC;
+    transition: 0.3s;
+}
+
+/* background apenas em linhas pares */
+tbody tr:nth-child(even) {
+    background-color: #EEE;
+}
