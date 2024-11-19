@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Caracteres especiais -->
+    <meta charset="UTF-8" />
+    <!-- Título da janela -->
+    <title>Template</title>
+    <!-- Importando css -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <h1>Página de teste</h1>
+
+
+    <!-- 
+
+    VALIDAÇÕES NATIVAS
+    > são validações que são pre-configuradas no HTML, são definidos através de atributos dentro das tag's inputs
+
+    required - torna o campo obrigátorio
+
+    ** ambas configurações abaixo só começam a valer quando o usuário começa a digitar **
+    minlenght - quantidade MÍNIMA de caracteres que precisamos ter no input
+    maxlenght - quantidade MÁXIMA de caracteres que precisamos ter no input
+
+    -->
+    <form method="POST" action="blablabla.php">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label>
+          Primeiro nome: <br />
+          <input type="text" name="name" required minlength="3"/>
+        </label>
+
+        <label>
+          Sobrenome: <br />
+          <input type="text" name="lastname" required maxlength="10"/>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dados Profissionais</legend>
+        <label>
+          Nome da empresa: <br />
+          <input type="text" name="companyname" required />
+        </label>
+
+        <label>
+          Cargo na empresa: <br />
+          <input type="text" name="companyjobtitle" required />
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Cadastrar" />
+    </form>
+  </body>
+</html>

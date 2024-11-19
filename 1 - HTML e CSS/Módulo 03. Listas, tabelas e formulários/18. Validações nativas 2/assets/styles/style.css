@@ -1,0 +1,15 @@
+label {
+    display: block;
+}
+
+fieldset {
+    background-color: #EEE;
+    margin-bottom: 20px;
+    border: 2px solid #0000FF;
+}
+
+legend {
+    background-color: #0000FF;
+    color: #FFF;
+    padding: 5px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Caracteres especiais -->
+    <meta charset="UTF-8" />
+    <!-- Título da janela -->
+    <title>Template</title>
+    <!-- Importando css -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <h1>Página de teste</h1>
+
+
+    <!-- 
+
+    VALIDAÇÕES NATIVAS
+    > são validações que são pre-configuradas no HTML, são definidos através de atributos dentro das tag's inputs
+
+    step = em inputs tipo number ele irá "pular", exemplo, se colocar 2, irá aumentar de 2 em 2
+
+    -->
+    <form method="POST" action="blablabla.php">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label>
+          Primeiro nome: <br />
+          <input type="text" name="name"/>
+        </label>
+
+        <label>
+          Sobrenome: <br />
+          <input type="text" name="lastname"/>
+        </label>
+        
+        <label>
+          Idade: <br />
+          <input type="number" name="age" step="2"/>
+        </label>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Dados Profissionais</legend>
+        <label>
+          Nome da empresa: <br />
+          <input type="text" name="companyname" />
+        </label>
+
+        <label>
+          Cargo na empresa: <br />
+          <input type="text" name="companyjobtitle" />
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Cadastrar" />
+    </form>
+  </body>
+</html>

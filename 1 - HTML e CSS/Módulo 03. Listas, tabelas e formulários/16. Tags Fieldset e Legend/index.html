@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Caracteres especiais -->
+    <meta charset="UTF-8" />
+    <!-- Título da janela -->
+    <title>Template</title>
+    <!-- Importando css -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <h1>Página de teste</h1>
+
+    <form method="POST">
+    <!-- fieldset é para agrupar os elementos do formulário, criando um retângulo em volta deles -->
+      <fieldset>
+        <!-- legend é como se fosse o título desse agrupamento -->
+        <legend>Dados Pessoais</legend>
+        <label>
+          Primeiro nome: <br />
+          <input type="text" name="name" />
+        </label>
+
+        <label>
+          Sobrenome: <br />
+          <input type="text" name="lastname" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dados Profissionais</legend>
+        <label>
+          Nome da empresa: <br />
+          <input type="text" name="companyname" />
+        </label>
+
+        <label>
+          Cargo na empresa: <br />
+          <input type="text" name="companyjobtitle" />
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Cadastrar" />
+    </form>
+  </body>
+</html>
